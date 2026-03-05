@@ -1,0 +1,122 @@
+----------INDEX--------------------
+
+Aula 2 -Imagens e links
+
+img banner_index
+
+
+Conhecendo um pouco da história do Windows
+
+
+O Windows é um sistema operacional desenvolvido pela Microsoft e é amplamente utilizado em computadores pessoais em todo o mundo. 
+Ele foi lançado pela primeira vez em 1985 e passou por várias versões desde então, incluindo o Windows 95, Windows 98, Windows XP,
+ Windows Vista, Windows 7, Windows 8 e a mais recente, Windows 10.
+
+O Windows oferece uma interface gráfica do usuário (GUI) baseada em janelas, que permite aos usuários executar várias tarefas simultaneamente.
+ Ele é compatível com a maioria dos programas populares e oferece suporte a uma ampla variedade de hardware e dispositivos.
+
+Algumas das características do Windows incluem a capacidade de personalizar a aparência e o layout da área de trabalho, 
+o suporte a múltiplas contas de usuário, a capacidade de executar vários programas simultaneamente e a capacidade de conectar-se a redes locais e à Internet.
+
+O Windows também oferece uma ampla gama de ferramentas e utilitários, como o Gerenciador de Tarefas, que permite aos usuários monitorar o desempenho do sistema,
+ e o Painel de Controle, que permite aos usuários ajustar várias configurações do sistema.
+
+Embora o Windows seja um sistema operacional popular, ele não é imune a problemas. Os usuários às vezes enfrentam problemas como lentidão do sistema,
+ erros de software e problemas de segurança. No entanto, a Microsoft geralmente libera atualizações de segurança e correções de bugs para lidar com esses problemas.
+
+Versões mais recentes
+
+img w7_1
+img w8_2
+img w10_3
+img w11_4
+
+----------PAG 2 -----------------
+
+img banner_w7
+
+O Windows 7 é um sistema operacional desenvolvido pela Microsoft que foi lançado em 2009. Ele foi projetado para ser uma atualização significativa do Windows Vista,
+com melhorias de desempenho, interface de usuário mais intuitiva e recursos adicionais. O Windows 7 foi amplamente elogiado por sua estabilidade e facilidade de uso,
+e tornou-se um dos sistemas operacionais mais populares da história da Microsoft.
+
+O Windows 7 apresentou uma série de recursos importantes que melhoraram a experiência do usuário, incluindo a capacidade de encaixar janelas
+lado a lado para facilitar a multitarefa, uma barra de tarefas redesenhada com ícones maiores e mais intuitivos, e melhorias na busca de arquivos.
+Além disso, o Windows 7 também incluiu suporte a dispositivos de hardware mais recentes e tecnologias, como unidades de estado sólido (SSDs), dispositivos 
+de entrada sensíveis ao toque e conexões sem fio.
+
+Embora o Windows 7 tenha sido um sucesso crítico e comercial, ele foi eventualmente substituído pelo Windows 8 em 2012 e pelo Windows 10 em 2015. 
+A Microsoft encerrou o suporte ao Windows 7 em janeiro de 2020, o que significa que não haverá mais atualizações de segurança ou correções de bugs 
+para esse sistema operacional. No entanto, ainda há muitos usuários que preferem o Windows 7 por sua estabilidade e familiaridade, e o sistema operacional continua 
+sendo uma escolha popular para algumas empresas e usuários domésticos.
+
+
+----------PAG 3 -----------------
+
+img banner_w8
+
+O Windows 8 é um sistema operacional da Microsoft lançado em 2012. Ele foi projetado para ser uma atualização significativa do Windows 7, 
+com um novo design e recursos adicionais para suportar dispositivos de tela sensível ao toque. O Windows 8 apresentou uma interface de usuário completamente
+redesenhada, conhecida como "Metro", com ícones maiores e uma tela inicial personalizável com blocos dinâmicos.
+
+Uma das principais novidades do Windows 8 foi a adição da Windows Store, que permitia aos usuários baixar e instalar aplicativos diretamente em seus computadores.
+ Além disso, o Windows 8 introduziu o suporte a gestos de toque, como deslizar, beliscar e apertar, permitindo uma interação mais intuitiva com dispositivos de tela 
+sensível ao toque.
+
+Apesar de suas inovações, o Windows 8 recebeu críticas por sua interface de usuário confusa e difícil de navegar em computadores que não eram de tela sensível ao toque.
+ Ele também enfrentou críticas por remover o botão Iniciar clássico, que havia sido uma característica do Windows desde o Windows 95. 
+Em resposta a essas críticas, a Microsoft lançou uma atualização gratuita, o Windows 8.1, que reintroduziu o botão Iniciar e fez outras melhorias na interface de usuário.
+
+
+--------PAG 4 ----------------
+
+img banner_w10
+
+O Windows 10 é um sistema operacional desenvolvido pela Microsoft e lançado em 2015. Ele foi projetado para ser uma atualização significativa do Windows
+ 8, com uma interface de usuário mais refinada e recursos adicionais. O Windows 10 apresentou uma combinação da interface de usuário do Windows 7 com a 
+interface de usuário do Windows 8, permitindo que os usuários se familiarizem facilmente com o sistema operacional.
+
+O Windows 10 também apresentou a assistente de voz da Microsoft, a Cortana, que permite que os usuários realizem tarefas usando apenas sua voz. Além disso, o
+ Windows 10 também incluiu uma série de recursos de segurança, como a plataforma de segurança de inicialização segura (Secure Boot) e o Windows Hello, que permite 
+que os usuários desbloqueiem seus dispositivos usando biometria.
+
+Uma das principais novidades do Windows 10 é que ele é um serviço contínuo, o que significa que a Microsoft está constantemente lançando atualizações de 
+segurança e recursos. Além disso, o Windows 10 introduziu a Microsoft Store, que permite aos usuários baixar e instalar aplicativos e jogos diretamente em 
+seus computadores. O sistema operacional tornou-se um dos mais populares da história da Microsoft e é amplamente utilizado em todo o mundo.
+
+-----PAG 5-----------
+
+img banner_w11
+
+O Windows 11 é o sistema operacional mais recente da Microsoft, lançado em outubro de 2021. Ele foi projetado para ser uma atualização significativa do Windows 10, 
+com uma interface de usuário mais moderna e recursos adicionais para melhorar a produtividade e a segurança. O Windows 11 apresenta um novo design visual, 
+com janelas mais arredondadas e uma barra de tarefas centralizada.
+
+Uma das principais novidades do Windows 11 é a integração do Microsoft Teams, um aplicativo de comunicação em equipe, diretamente no sistema operacional.
+ O Windows 11 também inclui novos recursos de multitarefa, como a possibilidade de criar desktops virtuais e agrupar várias janelas em uma visualização única. 
+Além disso, o Windows 11 apresenta aprimoramentos na segurança, incluindo o Windows Hello, que permite aos usuários desbloquear seus dispositivos usando biometria.
+
+No entanto, o Windows 11 apresentou alguns requisitos de hardware mais rigorosos do que o Windows 10, o que significa que nem todos os computadores serão 
+compatíveis com o novo sistema operacional. Além disso, a Microsoft enfrentou algumas críticas por tornar alguns recursos, como a barra de tarefas centralizada, 
+não personalizáveis. Apesar disso, o Windows 11 tem sido bem recebido pelos usuários e é a mais recente adição à linha de sistemas operacionais da Microsoft.
+
+
+<!--Desafio com listas: precisamos usar uma lista ordenada com uma lista de definição dentro. -->
+
+Mudanças com relação a versão anterior
+
+1. Interface de usuário:
+    Uma das mudanças mais visíveis entre o Windows 11 e o Windows 10 é a interface de usuário. O Windows 11 apresenta um novo design visual, com janelas mais arredondadas, 
+    bordas mais finas e uma barra de tarefas centralizada. Além disso, o menu Iniciar foi redesenhado e agora apresenta um layout mais simplificado.
+
+2.Novos recursos de produtividade:
+    O Windows 11 apresenta vários novos recursos para melhorar a produtividade dos usuários. Ele inclui uma nova funcionalidade de desktops virtuais que permite criar
+    várias áreas de trabalho para facilitar a organização de aplicativos e janelas abertas. Além disso, o sistema operacional inclui uma nova funcionalidade de snap layouts que permite organizar rapidamente várias janelas abertas em diferentes configurações de tela.
+
+3.Microsoft Teams integrado:
+    O Microsoft Teams está integrado ao Windows 11, permitindo aos usuários participar de reuniões e conversas diretamente do sistema operacional, sem a necessidade
+    de abrir um aplicativo separado.
+
+4.Requisitos de hardware mais rigorosos:
+    O Windows 11 tem requisitos de hardware mais rigorosos em comparação com o Windows 10. Para rodar o novo sistema operacional, o computador precisa ter um 
+    processador compatível com o TPM 2.0 (Trusted Platform Module) e suporte para Secure Boot. Esses requisitos podem fazer com que alguns computadores não sejam,
+    compatíveis com o Windows 11, o que pode ser uma limitação para alguns usuários.
