@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formulario de candidatura</h1>
+
+    <form action="">
+        <label for="nome">
+            Nome:
+            <input type="text" name="nome" id="nome">
+        </label>
+
+        <br><br>
+
+        <label for="email"> Email:
+            <input type="text" name="email" id="email">
+        </label>
+
+        <br><br>
+
+        <label for="cargoTecnologia">
+            Cargo na Tecnologia:
+            <select name="cargoTecnologia" id="cargoTecnologia">
+                <option value="">--Selecione um cargo--</option>
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="analista">Analista</option>
+                <option value="tester">Tester</option>
+            </select>
+        </label>
+
+        <br><br>
+
+        <label for="genero">Gênero:
+            <input type="radio" name="genero" id="genero"> Masculino
+            <input type="radio" name="genero" id="genero"> Feminino
+            <input type="radio" name="genero" id="genero">Outro
+        </label>
+
+        <br><br>
+
+        <label for="unidade">Unidade de Interesse:
+            <input type="checkbox" name="unidade" id="unidade"> Fortaleza
+            <input type="checkbox" name="unidade" id="unidade"> Caucaia
+            <input type="checkbox" name="unidade" id="unidade">Eusébio
+        </label>
+
+        <br><br>
+
+        <label for="sobre">Fale mais sobre você</label>
+        <br>
+        <textarea name="sobre" id="sobre" rows="5" cols="40"></textarea>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar">
+
+        <style>
+            form {
+                background-color: #bcbaba;
+                padding: 20px;
+                border-radius: 5px;
+                width: 370px;
+            }
+        </style>
+    </form>
+</body>
+
+</html>

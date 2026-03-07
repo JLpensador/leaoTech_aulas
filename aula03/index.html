@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+
+    <style>
+        th,
+        td,
+        tr,
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            text-align: center;
+        }
+    </style>
+
+    <h1>Trabalhando com tabelas</h1>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>28</td>
+            <td>Caucaia</td>
+
+        </tr>
+        <tr>
+            <td>Arthur</td>
+            <td colspan="2">40</td>
+        </tr>
+    </table>
+
+    <hr>
+    <table>
+        <tr>
+            <th>Linguagem</th>
+            <th>Framework</th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Flask</td>
+        </tr>
+
+        <tr>
+            <td>Python</td>
+            <td>FastAPI</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>React</td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>Angular</td>
+        </tr>
+    </table>
+
+    <a href="atividades/atividade01.html">
+        <p>atividade01</p>
+    </a>
+
+    <a href="atividades/atividade02.html">
+        <p>atividade02</p>
+    </a>
+
+    <h1>Formulário</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
