@@ -1,0 +1,27 @@
+h2 {
+  color: darkorange;
+}
+
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: lightgray;
+}
+
+span {
+  border: 2px solid rgb(1, 35, 147);
+  padding: 10px;
+}
+
+#borda2 {
+  border-top: 2px solid rgb(147, 25, 1);
+  border-left: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(3, 147, 1);
+  border-bottom: 2px solid rgb(174, 0, 255);
+}

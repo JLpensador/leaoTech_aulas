@@ -1,0 +1,26 @@
+body {
+  background-color: azure;
+  border: 5px solid purple;
+  font-size: 60px;
+}
+
+header {
+  font-family: "Times New Roman", Times, serif;
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+section {
+  font-family: "Times New Roman", Times, serif;
+  color: purple;
+  font-size: 40px;
+  text-align: center;
+}
+
+main div {
+  background-color: blueviolet;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
