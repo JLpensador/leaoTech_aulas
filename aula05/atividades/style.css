@@ -1,0 +1,40 @@
+div {
+  border: 5px solid black;
+}
+
+main {
+  border: 5px solid rgb(0, 85, 255);
+  width: 40%;
+  padding: 20px;
+}
+
+.caixa {
+  margin-bottom: 50px;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.caixaGigante {
+  width: 400px;
+  height: 400px;
+}
+
+#caixaPequena1 {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+#caixaPequena2 {
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+#caixaPequena3 {
+  width: 300px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
