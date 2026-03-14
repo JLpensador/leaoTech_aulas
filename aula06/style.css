@@ -1,0 +1,50 @@
+.container {
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  height: 500px;
+  justify-content: center;
+  align-content: start;
+
+  align-items: end;
+}
+
+div {
+  margin: 10px;
+}
+
+.div1 {
+  background-color: red;
+  width: 100px;
+  height: 150px;
+  padding-top: 20px;
+  order: 1;
+}
+
+.div2 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+}
+
+.div3 {
+  background-color: purple;
+  width: 100px;
+  height: 200px;
+  order: -1;
+}
+
+.div4 {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+.div5 {
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+}
