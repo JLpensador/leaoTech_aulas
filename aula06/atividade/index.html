@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receita de Macarronada Italiana</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,81 +12,106 @@
 
     <header>
         <h1>Receita de Macarronada Italiana</h1>
-
-        <div>Iníco</div>
-        <div>Ingredientes</div>
-        <div>Preparo</div>
-        <div>Dicas</div>
-        <div>Contato</div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#ingredientes">Ingredientes</a>
+            <a href="#preparo">Preparo</a>
+            <a href="#dicas">Dicas</a>
+            <a href="#contato">Contato</a>
+        </nav>
     </header>
 
     <main>
-        <div class="container1">
-            <div class="texto1">
-                <h2>
-                    Uma receita Clássica e deliciosa
-                </h2>
 
-                <p>
-                    A macarronada italiana é uma receita tradicional, saborosa e muito apreciada. Nesta página você
-                    encontrará os ingredientes, o modo de preparo e algumas dicas para deixar seu prato ainda melhor
-                </p>
-            </div>
-
-            <div class="imagem1">
-                <img src="img/212809-original.webp" alt="">
-            </div>
-        </div>
-
-        <section>
-
-            <div>
-
-                <h2>Ingredientes</h2>
-                <ul>
-                    <li>Macarrão</li>
-                    <li>Presunto</li>
-                    <li>Queijo</li>
-                    <li>Molho de tomate</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Preparo</h2>
-                <ol>
-                    <li>Cozinhe o macarrão em água fervente.</li>
-                    <li>Em uma panela, aqueça o molho de tomate e adicione o presunto e o queijo.</li>
-                    <li>Misture bem e desligue o fogo.</li>
-                    <li>Combine o macarrão cozido com o molho e sirva quente.</li>
-                </ol>
+        <section id="inicio">
+            <div class="introducao">
+                <div>
+                    <h2>Uma receita clássica e deliciosa</h2>
+                    <p>
+                        A macarronada italiana é uma receita tradicional, saborosa e muito apreciada.
+                        Nesta página você encontrará os ingredientes, o modo de preparo e algumas
+                        dicas para deixar seu prato ainda melhor.
+                    </p>
+                    <p>
+                        O objetivo desta atividade é praticar HTML e CSS, principalmente o uso
+                        do display flex para organizar melhor o conteúdo da página.
+                    </p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1598866594230-a7c12756260f?w=400&h=300&fit=crop"
+                    alt="Prato de macarronada italiana">
             </div>
         </section>
 
-        <div class="container2">
-            <h2>Dicas</h2>
+        <div class="ingredientes-preparo">
 
-            <div>
-                <h4>Use queijo ralado</h4>
-                <p>
-                    O queijo ralado dá um sabor especial e melhora a finalização do prato
-                </p>
-            </div>
-            <div>
-                <h4>Capriche no molho</h4>
-                <p>
-                    Um molho bem temperado faz toda a diferença no resultado final
-                </p>
-            </div>
-            <div>
-                <h4>Sirva quente</h4>
-                <p>
-                    A macarronada fica muito mais saborosa quando servida logo após o preparo
-                </p>
+            <section id="ingredientes">
+                <h2>Ingredientes</h2>
+                <ul>
+                    <li>500g de macarrão</li>
+                    <li>500g de carne moída</li>
+                    <li>2 tomates picados</li>
+                    <li>1 cebola picada</li>
+                    <li>2 dentes de alho</li>
+                    <li>Molho de tomate</li>
+                    <li>Sal a gosto</li>
+                    <li>Pimenta-do-reino</li>
+                    <li>Queijo ralado</li>
+                </ul>
+            </section>
 
-            </div>
+            <section id="preparo">
+                <h2>Modo de Preparo</h2>
+                <ol>
+                    <li>Cozinhe o macarrão conforme as instruções da embalagem.</li>
+                    <li>Refogue a cebola e o alho.</li>
+                    <li>Adicione a carne moída e cozinhe bem.</li>
+                    <li>Acrescente os tomates e o molho de tomate.</li>
+                    <li>Tempere com sal e pimenta.</li>
+                    <li>Misture o molho ao macarrão.</li>
+                    <li>Finalize com queijo ralado e sirva.</li>
+                </ol>
+            </section>
+
         </div>
+
+        <section id="dicas" class="dicas">
+            <h2>Dicas do Chef</h2>
+            <div class="dicas-grid">
+
+                <div class="dica-item">
+                    <h3>Use queijo ralado</h3>
+                    <p>O queijo ralado dá um sabor especial e melhora a finalização do prato.</p>
+                </div>
+
+                <div class="dica-item">
+                    <h3>Capriche no molho</h3>
+                    <p>Um molho bem temperado faz toda a diferença no resultado final.</p>
+                </div>
+
+                <div class="dica-item">
+                    <h3>Sirva quente</h3>
+                    <p>A macarronada fica muito mais saborosa quando servida logo após o preparo.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <h2>Envie sua sugestão</h2>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="sugestao">Sua sugestão:</label>
+            <textarea id="sugestao" name="sugestao"></textarea>
+
+            <button type="button">Enviar</button>
+        </section>
+
     </main>
-
-
 
 </body>
 

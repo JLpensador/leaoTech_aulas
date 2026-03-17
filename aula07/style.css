@@ -1,0 +1,74 @@
+body {
+  margin-bottom: 500px;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#caixa1 {
+  background: linear-gradient(to right, blue, red);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#caixa1:hover {
+  background: rgb(136, 0, 0);
+  transform: scale(1.2);
+  transition: 0.5s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+div h3:hover {
+  color: rgb(255, 255, 255);
+}
+
+#formulario {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(0, 119, 255);
+  margin-left: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+
+  box-shadow: 4px 4px 10px rgb(97, 20, 220);
+}
+
+#nome {
+  background-color: black;
+  color: white;
+  border: 1px solid rgb(255, 0, 0);
+}
+
+#nome:focus {
+  background-color: white;
+  color: black;
+}
+
+.container {
+  border: 1px solid silver;
+  justify-content: space-around;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  margin: 3px;
+  position: static;
+}
+
+.verde {
+  background-color: green;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
