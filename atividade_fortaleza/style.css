@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #003087;
+  font-family: sans-serif;
+  color: #f7f9fc;
+  padding: 40px 20px 60px;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: 110px;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  font-size: 60px;
+  color: #f5c518;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtag {
+  font-size: 14px;
+  color: #c8102e;
+  margin-bottom: 20px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #c8102e;
+  margin: 0 auto 24px;
+}
+
+.descricao {
+  font-size: 16px;
+  color: #e4e8ef;
+  text-align: center;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto 30px;
+}
+
+.foto-tech {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: 240px;
+  object-fit: cover;
+  margin: 0 auto 40px;
+  border: 3px solid #c8102e;
+}
+
+.card {
+  display: inline-block;
+  width: 220px;
+  background-color: #f7f9fc;
+  color: #1a1a2e;
+  border: 3px solid #f5c518;
+  padding: 24px 16px;
+  margin: 0 10px;
+  vertical-align: top;
+}
+
+.card-label {
+  font-size: 12px;
+  color: #c8102e;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  font-size: 20px;
+  color: #003087;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 26px;
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 48px;
+  font-size: 13px;
+  color: #aab0be;
+  text-align: center;
+}
