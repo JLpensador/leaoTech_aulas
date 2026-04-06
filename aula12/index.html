@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    // let idade = parseInt(prompt("Digite sua idade: "));
+
+    // if (idade >= 60) {
+    //     alert("Você é idoso.");
+    // } else if (idade >= 18) {
+    //     alert("Você é adulto.");
+    // } else if (idade >= 12) {
+    //     alert("Você é adolescente.");
+    // } else {
+    //     alert("Você é criança.");
+    // }
+
+    let idade = parseInt(prompt("Digite sua idade: "));
+    let carteiraMotorista = confirm("Tem carteira de Motorista? ");
+
+    if (idade >= 18 && carteiraMotorista == true) {
+        alert("Você pode dirigir");
+    } else {
+        alert("Você não pode dirigir");
+    }
+
+    let profissao = prompt("Digite sua profissão: ")
+
+    if (profissao === 'estudante' || profissao === 'professor') {
+        alert("Você tem desconto");
+    } else {
+        alert("Você não tem desconto");
+    }
+
+    let logado = true
+
+    if (!logado) {
+        alert("Faça login para acessar o conteúdo");
+    } else {
+        alert("Bem-vindo ao conteúdo exclusivo");
+    }
+
+</script>
+
+</html>
