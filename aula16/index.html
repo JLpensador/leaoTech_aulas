@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    // Um sistema pede ao usuário o preço de 5 produtos. Armazene os valores em uma array e depois pecorra o array e mostre a soma dos preços dos produtos, o produto mais caro e o produto mais barato.
+
+    // let arrayPrecos = [];
+    // for (let i = 0; i < 5; i++) {
+    //     let preco = parseFloat(prompt("Digite o preço do produto " + (i + 1)));
+    //     arrayPrecos.push(preco);
+    // }
+
+    // let soma = 0;
+    // for (let i = 0; i < arrayPrecos.length; i++) {
+    //     soma += arrayPrecos[i];
+    // }
+
+    // let min = arrayPrecos[0];
+    // let max = arrayPrecos[0];
+
+    // for (let i = 1; i < arrayPrecos.length; i++) {
+    //     if (arrayPrecos[i] < min) {
+    //         min = arrayPrecos[i];
+    //     }
+    //     if (arrayPrecos[i] > max) {
+    //         max = arrayPrecos[i];
+    //     }
+    // }
+
+    // console.log("Soma dos preços: " + soma);
+    // console.log("Produto mais caro: " + max);
+    // console.log("Produto mais barato: " + min);
+
+    // Crie um sistema para cadastrar uma lista de convidados, o usuário terá duas opções: cadastrar convidado e sair. Depois de cadastrar todos os convidados, crie um programa  que peça para o usuário  digitar seu nome e veja se ele está na lista de convidados, se tiver dê uma mensagem de boas vindas, se não tiver diga que ele não está na lista.
+
+    let convidados = [];
+    let opcao;
+
+    do {
+        opcao = prompt("Digite 1 para cadastrar convidado ou digite 2 para sair");
+        if (opcao === "1") {
+            let nome = prompt("Digite o nome do convidado");
+            convidados.push(nome);
+
+        } else if (opcao === "2") {
+            break;
+        } else {
+            alert("Opção inválida, tente novamente.");
+        }
+    } while (opcao !== "2");
+
+    let nomeUsuario = prompt("Digite seu nome para verificar se está na lista de convidados");
+    if (convidados.includes(nomeUsuario)) {
+        alert("Bem-vindo, " + nomeUsuario + "!");
+    } else {
+        alert("Desculpe, " + nomeUsuario + ", você não está na lista de convidados.");
+    }
+
+    //     4. validação de entrada
+
+    // Um sistema precisa garantir que o usuário digite um valor válido.
+
+    // Solicite um número entre 1 e 10.
+    // Utilize while para repetir a pergunta até o valor ser válido.
+
+    let numero;
+    do {
+        numero = parseInt(prompt("Digite um número entre 1 e 10"));
+        if (isNaN(numero) || numero < 1 || numero > 10) {
+            alert("Número inválido, tente novamente.");
+        }
+    } while (isNaN(numero) || numero < 1 || numero > 10);
+
+    // #############################
+    // ######## do while #############
+    // #############################
+
+    //         1. confirmação de operação(simples)
+
+    // Um sistema precisa confirmar uma ação.
+
+    //             Pergunte:
+    //         "Deseja continuar? (s/n)"
+
+    // Utilize do while para repetir até o usuário digitar "s" ou "n".
+
+    let resposta;
+    do {
+        resposta = prompt("Deseja continuar? (s/n)").toLowerCase();
+        if (resposta !== "s" && resposta !== "n") {
+            alert("Resposta inválida, digite 's' para sim ou 'n' para não.");
+        }
+    } while (resposta !== "s" && resposta !== "n");
+
+    // 2. sistema de menu com operações
+
+    // Um sistema possui o menu:
+
+    //         1 - Somar dois números
+    //         2 - Subtrair dois números
+    //         3 - Sair
+
+    // Utilize do while para:
+
+    // exibir o menu
+    // executar a operação escolhida(usar switch)
+    // repetir até o usuário escolher sair
+
+    let opcaoMenu;
+    do {
+        opcaoMenu = prompt("Menu:\n1 - Somar dois números\n2 - Subtrair dois números\n3 - Sair");
+        switch (opcaoMenu) {
+            case "1":
+                let num1 = parseFloat(prompt("Digite o primeiro número"));
+                let num2 = parseFloat(prompt("Digite o segundo número"));
+                alert("Resultado: " + (num1 + num2));
+                break;
+            case "2":
+                let num3 = parseFloat(prompt("Digite o primeiro número"));
+                let num4 = parseFloat(prompt("Digite o segundo número"));
+                alert("Resultado: " + (num3 - num4));
+                break;
+            case "3":
+                alert("Saindo do menu.");
+                break;
+            default:
+                alert("Opção inválida, tente novamente.");
+        }
+    } while (opcaoMenu !== "3");
+
+    // ###############################################################################
+    // ##################################### Objetos ###################################
+    // ###############################################################################
+
+    //         1. Cadastro de produto
+    // Crie um programa que peça via prompt:
+    // nome do produto
+    // preço
+    // quantidade em estoque
+
+    // Depois monte um objeto chamado produto com essas informações e exiba:
+    //nome
+    // valor total em estoque(preço × quantidade)
+
+    let nomeProduto = prompt("Digite o nome do produto");
+    let precoProduto = parseFloat(prompt("Digite o preço do produto"));
+    let quantidadeProduto = parseInt(prompt("Digite a quantidade em estoque"));
+    let produto = {
+        nome: nomeProduto,
+        preco: precoProduto,
+        quantidade: quantidadeProduto
+    };
+    let valorTotalEstoque = produto.preco * produto.quantidade;
+    console.log("Produto: " + produto.nome);
+    console.log("Valor total em estoque: " + valorTotalEstoque);
+
+    //         2. Cadastro de aluno
+    // Peça via prompt:
+    // nome do aluno
+    // nota 1
+    // nota 2
+
+    // Monte um objeto aluno com essas informações.
+    // Calcule a média e mostre:
+
+    // “Aprovado” se média >= 7
+    // “Recuperação” se média >= 5 e < 7
+    // “Reprovado” se média < 5
+
+    let nomeAluno = prompt("Digite o nome do aluno");
+    let nota1 = parseFloat(prompt("Digite a nota 1 do aluno"));
+    let nota2 = parseFloat(prompt("Digite a nota 2 do aluno"));
+    let aluno = {
+        nome: nomeAluno,
+        nota1: nota1,
+        nota2: nota2
+    };
+    let media = (aluno.nota1 + aluno.nota2) / 2
+    if (media >= 7) {
+        console.log("Aprovado");
+    } else if (media >= 5 && media < 7) {
+        console.log("Recuperação");
+    } else {
+        console.log("Reprovado");
+    }
+
+    //         3. Controle de funcionário
+    //         Peça:
+    //         nome
+    //         cargo
+    //         salário
+    // quantidade de faltas
+
+    // Crie um objeto funcionário.
+    // Se tiver mais de 3 faltas, mostre que o funcionário perdeu o bônus.
+    // Caso contrário, mostre que receberá bônus de 10 % sobre o salário.
+
+    let nomeFuncionario = prompt("Digite o nome do funcionário");
+    let cargoFuncionario = prompt("Digite o cargo do funcionário");
+    let salarioFuncionario = parseFloat(prompt("Digite o salário do funcionário"));
+    let faltasFuncionario = parseInt(prompt("Digite a quantidade de faltas do funcionário"));
+    let funcionario = {
+        nome: nomeFuncionario,
+        cargo: cargoFuncionario,
+        salario: salarioFuncionario,
+        faltas: faltasFuncionario
+    };
+    if (funcionario.faltas > 3) {
+        console.log("O funcionário perdeu o bônus.");
+    } else {
+        let bonus = funcionario.salario * 0.10;
+        console.log("O funcionário receberá um bônus de: " + bonus);
+    }
+
+    // 4. Pedido de lanchonete
+    // Crie um objeto pedido com:
+    // nome do cliente
+    // nome do lanche
+    // quantidade
+    // preço unitário
+
+    // Calcule o total do pedido.
+    // Se o total for maior que 30, aplique 5 % de desconto.
+    // Mostre o resumo final do pedido.
+
+    let nomeCliente = prompt("Digite o nome do cliente");
+    let nomeLanche = prompt("Digite o nome do lanche");
+    let quantidadeLanche = parseInt(prompt("Digite a quantidade do lanche"));
+    let precoUnitarioLanche = parseFloat(prompt("Digite o preço unitário do lanche"));
+    let pedido = {
+        cliente: nomeCliente,
+        lanche: nomeLanche,
+        quantidade: quantidadeLanche,
+        precoUnitario: precoUnitarioLanche
+    };
+    let totalPedido = pedido.quantidade * pedido.precoUnitario;
+    if (totalPedido > 30) {
+        totalPedido *= 0.95; // Aplica 5% de desconto
+    }
+    console.log("Resumo do pedido:");
+    console.log("Cliente: " + pedido.cliente);
+    console.log("Lanche: " + pedido.lanche);
+    console.log("Quantidade: " + pedido.quantidade);
+    console.log("Preço unitário: " + pedido.precoUnitario);
+    console.log("Total do pedido: " + totalPedido);
+
+    // 5. Cadastro de carro
+    //         Peça:
+    //         marca
+    //         modelo
+    //         ano
+    //         valor
+
+    // Crie um objeto carro.
+    //             Verifique:
+
+    // se o carro tem menos de 10 anos, mostre “Seminovo”
+    //         senão, mostre “Usado”
+
+    // Depois exiba todos os dados do objeto.
+
+    let marcaCarro = prompt("Digite a marca do carro");
+    let modeloCarro = prompt("Digite o modelo do carro");
+    let anoCarro = parseInt(prompt("Digite o ano do carro"));
+    let valorCarro = parseFloat(prompt("Digite o valor do carro"));
+    let carro = {
+        marca: marcaCarro,
+        modelo: modeloCarro,
+        ano: anoCarro,
+        valor: valorCarro
+    };
+    let anoAtual = new Date().getFullYear();
+    if (anoAtual - carro.ano < 10) {
+        console.log("Seminovo");
+    } else {
+        console.log("Usado");
+    }
+    console.log("Dados do carro:");
+    console.log("Marca: " + carro.marca);
+    console.log("Modelo: " + carro.modelo);
+    console.log("Ano: " + carro.ano);
+    console.log("Valor: " + carro.valor);
+
+    // 6. Lista de produtos
+    // Crie manualmente um array de objetos chamado produtos com pelo menos 4 produtos.
+    // Cada produto deve ter:
+    //         nome
+    //         preço
+    //         estoque
+
+    // Faça um for para mostrar apenas os produtos com estoque maior que 0.
+
+    let produtos = [
+        { nome: "Produto A", preco: 10.0, estoque: 5 },
+        { nome: "Produto B", preco: 20.0, estoque: 0 },
+        { nome: "Produto C", preco: 15.0, estoque: 3 },
+        { nome: "Produto D", preco: 25.0, estoque: 10 }
+    ];
+    for (let i = 0; i < produtos.length; i++) {
+        if (produtos[i].estoque > 0) {
+            console.log("Produto: " + produtos[i].nome + ", Preço: " + produtos[i].preco + ", Estoque: " + produtos[i].estoque);
+        }
+    }
+
+    //         7. Sistema de estoque
+    // Usando um array de objetos produtos, percorra a lista e:
+    // exiba o nome dos produtos com estoque baixo(menor que 5)
+    // exiba o valor total de cada item em estoque(preço × estoque)
+
+    for (let i = 0; i < produtos.length; i++) {
+        if (produtos[i].estoque < 5) {
+            console.log("Produto com estoque baixo: " + produtos[i].nome);
+        }
+        let valorTotalEstoque = produtos[i].preco * produtos[i].estoque;
+        console.log("Valor total em estoque do " + produtos[i].nome + ": " + valorTotalEstoque);
+    }
+
+    //         8. Catálogo de alunos
+
+    // Crie um array de objetos alunos com:
+    //         nome
+    //         nota
+    //         curso
+
+    // Percorra com for e mostre:
+
+    // os alunos aprovados
+    // os alunos reprovados
+
+    // Depois conte quantos foram aprovados e quantos foram reprovados.
+
+    let alunos = [
+        { nome: "Aluno A", nota: 8.0, curso: "Curso X" },
+        { nome: "Aluno B", nota: 4.5, curso: "Curso Y" },
+        { nome: "Aluno C", nota: 6.0, curso: "Curso Z" },
+        { nome: "Aluno D", nota: 3.0, curso: "Curso X" }
+    ];
+    let aprovados = 0;
+    let reprovados = 0;
+    for (let i = 0; i < alunos.length; i++) {
+        if (alunos[i].nota >= 5) {
+            console.log("Aluno aprovado: " + alunos[i].nome);
+            aprovados++;
+        } else {
+            console.log("Aluno reprovado: " + alunos[i].nome);
+            reprovados++;
+        }
+    }
+    console.log("Total de alunos aprovados: " + aprovados);
+    console.log("Total de alunos reprovados: " + reprovados);
+
+    // 9. Controle de vendas
+    // Crie um array de objetos vendas com:
+    //         cliente
+    //         produto
+    //         quantidade
+    //         precoUnitario
+
+    // Percorra o array e calcule:
+
+    // total de cada venda
+    // valor total de todas as vendas somadas
+
+    // Se uma venda passar de 100 reais, exiba “Venda alta”.
+
+    let vendas = [
+        { cliente: "Cliente A", produto: "Produto X", quantidade: 2, precoUnitario: 30.0 },
+        { cliente: "Cliente B", produto: "Produto Y", quantidade: 1, precoUnitario: 50.0 },
+        { cliente: "Cliente C", produto: "Produto Z", quantidade: 5, precoUnitario: 10.0 }
+    ];
+    let valorTotalVendas = 0;
+    for (let i = 0; i < vendas.length; i++) {
+        let totalVenda = vendas[i].quantidade * vendas[i].precoUnitario;
+        console.log("Total da venda para " + vendas[i].cliente + ": " + totalVenda);
+        valorTotalVendas += totalVenda;
+        if (totalVenda > 100) {
+            console.log("Venda alta para " + vendas[i].cliente);
+        }
+    }
+    console.log("Valor total de todas as vendas: " + valorTotalVendas);
+
+    //         10. Sistema de login simples
+    // Crie um objeto usuário com:
+    //         login
+    //         senha
+    //         tipo
+
+    // Peça via prompt login e senha.
+    // Use if e else para verificar se os dados batem.
+    // Se estiver correto:
+
+    // se o tipo for “admin”, mostre “Acesso total”
+    //         senão, mostre “Acesso limitado”
+
+    let usuario = {
+        login: "usuario1",
+        senha: "senha123",
+        tipo: "admin"
+    };
+    let loginInput = prompt("Digite o login");
+    let senhaInput = prompt("Digite a senha");
+    if (loginInput === usuario.login && senhaInput === usuario.senha) {
+        if (usuario.tipo === "admin") {
+            alert("Acesso total");
+        } else {
+            alert("Acesso limitado");
+        }
+    } else {
+        alert("Login ou senha incorretos.");
+    }
+
+
+</script>
+
+</html>
