@@ -38,71 +38,71 @@
     let pessoa_js_convertida = JSON.parse(pessoa_json);
     console.log(pessoa_js_convertida);
 
-    // let cadastros = [
-    //     {
-    //         nome: "Maria",
-    //         telefone: "123456789",
-    //         cidade: "São Paulo",
-    //         profissao: "Engenheira",
-    //     },
-    //     {
-    //         nome: "João",
-    //         telefone: "987654321",
-    //         cidade: "Caucaia",
-    //         profissao: "administrador de banco de dados",
-    //     },
-    //     {
-    //         nome: "Ana",
-    //         telefone: "555555555",
-    //         cidade: "Belo Horizonte",
-    //         profissao: "Advogada",
-    //     },
-    // ];
+    let cadastros = [
+        {
+            nome: "Maria",
+            telefone: "123456789",
+            cidade: "São Paulo",
+            profissao: "Engenheira",
+        },
+        {
+            nome: "João",
+            telefone: "987654321",
+            cidade: "Caucaia",
+            profissao: "administrador de banco de dados",
+        },
+        {
+            nome: "Ana",
+            telefone: "555555555",
+            cidade: "Belo Horizonte",
+            profissao: "Advogada",
+        },
+    ];
 
-    // let opcao = prompt(
-    //     "Digite o número da opção desejada:\n1 - Listar cadastros\n2 - Remover cadastro\n3 - Adicionar cadastro\n4 - Sair",
-    // );
+    let opcao = prompt(
+        "Digite o número da opção desejada:\n1 - Listar cadastros\n2 - Remover cadastro\n3 - Adicionar cadastro\n4 - Sair",
+    );
 
-    // while (opcao !== "4") {
-    //     switch (opcao) {
-    //         case "1":
-    //             console.log("Cadastros:");
-    //             cadastros.forEach((cadastro, index) => {
-    //                 console.log(
-    //                     `${index + 1}. Nome: ${cadastro.nome}, Telefone: ${cadastro.telefone}, Cidade: ${cadastro.cidade}, Profissão: ${cadastro.profissao}`,
-    //                 );
-    //             });
-    //             break;
+    while (opcao !== "4") {
+        switch (opcao) {
+            case "1":
+                console.log("Cadastros:");
+                cadastros.forEach((cadastro, index) => {
+                    console.log(
+                        `${index + 1}. Nome: ${cadastro.nome}, Telefone: ${cadastro.telefone}, Cidade: ${cadastro.cidade}, Profissão: ${cadastro.profissao}`,
+                    );
+                });
+                break;
 
-    //         case "2":
-    //             let nomeRemover = prompt(
-    //                 "Digite o nome do cadastro que deseja remover:",
-    //             );
-    //             cadastros = cadastros.filter(
-    //                 (cadastro) =>
-    //                     cadastro.nome.toLowerCase() !== nomeRemover.toLowerCase(),
-    //             );
-    //             console.log(`Cadastro com nome "${nomeRemover}" removido.`);
-    //             break;
+            case "2":
+                let nomeRemover = prompt(
+                    "Digite o nome do cadastro que deseja remover:",
+                );
+                cadastros = cadastros.filter(
+                    (cadastro) =>
+                        cadastro.nome.toLowerCase() !== nomeRemover.toLowerCase(),
+                );
+                console.log(`Cadastro com nome "${nomeRemover}" removido.`);
+                break;
 
-    //         case "3":
-    //             let nome = prompt("Digite o nome:");
-    //             let telefone = prompt("Digite o telefone:");
-    //             let cidade = prompt("Digite a cidade:");
-    //             let profissao = prompt("Digite a profissão:");
+            case "3":
+                let nome = prompt("Digite o nome:");
+                let telefone = prompt("Digite o telefone:");
+                let cidade = prompt("Digite a cidade:");
+                let profissao = prompt("Digite a profissão:");
 
-    //             cadastros.push({ nome, telefone, cidade, profissao });
-    //             console.log("Cadastro adicionado com sucesso.");
-    //             break;
+                cadastros.push({ nome, telefone, cidade, profissao });
+                console.log("Cadastro adicionado com sucesso.");
+                break;
 
-    //         default:
-    //             console.log("Opção inválida. Tente novamente.");
-    //     }
+            default:
+                console.log("Opção inválida. Tente novamente.");
+        }
 
-    //     opcao = prompt(
-    //         "Digite o número da opção desejada:\n1 - Listar cadastros\n2 - Remover cadastro\n3 - Adicionar cadastro\n4 - Sair",
-    //     );
-    // }
+        opcao = prompt(
+            "Digite o número da opção desejada:\n1 - Listar cadastros\n2 - Remover cadastro\n3 - Adicionar cadastro\n4 - Sair",
+        );
+    }
 </script>
 
 </html>
