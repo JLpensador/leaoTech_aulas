@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body></body>
+
+<script>
+
+    //JSON
+
+    let pessoa_json = `{
+    "nome": "Maria",
+    "sobrenome": "Silva",
+    "idade": 30,
+    "cidade": "São Paulo",
+    "profissao": "Engenheira"
+}`;
+
+    //tipos de dados aceitos em JSON: string, number, boolean, array, object e null
+
+    //converter js para json
+    let pessoa_js = {
+        nome: "João Luiz",
+        sobrenome: "Borges",
+        idade: 25,
+        cidade: "Roma",
+        profissao: "Engenheiro",
+    };
+    let pessoa_json_convertida = JSON.stringify(pessoa_js);
+    console.log(pessoa_json_convertida);
+
+    //converter json para js
+    let pessoa_js_convertida = JSON.parse(pessoa_json);
+    console.log(pessoa_js_convertida);
+
+    // let cadastros = [
+    //     {
+    //         nome: "Maria",
+    //         telefone: "123456789",
+    //         cidade: "São Paulo",
+    //         profissao: "Engenheira",
+    //     },
+    //     {
+    //         nome: "João",
+    //         telefone: "987654321",
+    //         cidade: "Caucaia",
+    //         profissao: "administrador de banco de dados",
+    //     },
+    //     {
+    //         nome: "Ana",
+    //         telefone: "555555555",
+    //         cidade: "Belo Horizonte",
+    //         profissao: "Advogada",
+    //     },
+    // ];
+
+    // let opcao = prompt(
+    //     "Digite o número da opção desejada:\n1 - Listar cadastros\n2 - Remover cadastro\n3 - Adicionar cadastro\n4 - Sair",
+    // );
+
+    // while (opcao !== "4") {
+    //     switch (opcao) {
+    //         case "1":
+    //             console.log("Cadastros:");
+    //             cadastros.forEach((cadastro, index) => {
+    //                 console.log(
+    //                     `${index + 1}. Nome: ${cadastro.nome}, Telefone: ${cadastro.telefone}, Cidade: ${cadastro.cidade}, Profissão: ${cadastro.profissao}`,
+    //                 );
+    //             });
+    //             break;
+
+    //         case "2":
+    //             let nomeRemover = prompt(
+    //                 "Digite o nome do cadastro que deseja remover:",
+    //             );
+    //             cadastros = cadastros.filter(
+    //                 (cadastro) =>
+    //                     cadastro.nome.toLowerCase() !== nomeRemover.toLowerCase(),
+    //             );
+    //             console.log(`Cadastro com nome "${nomeRemover}" removido.`);
+    //             break;
+
+    //         case "3":
+    //             let nome = prompt("Digite o nome:");
+    //             let telefone = prompt("Digite o telefone:");
+    //             let cidade = prompt("Digite a cidade:");
+    //             let profissao = prompt("Digite a profissão:");
+
+    //             cadastros.push({ nome, telefone, cidade, profissao });
+    //             console.log("Cadastro adicionado com sucesso.");
+    //             break;
+
+    //         default:
+    //             console.log("Opção inválida. Tente novamente.");
+    //     }
+
+    //     opcao = prompt(
+    //         "Digite o número da opção desejada:\n1 - Listar cadastros\n2 - Remover cadastro\n3 - Adicionar cadastro\n4 - Sair",
+    //     );
+    // }
+</script>
+
+</html>

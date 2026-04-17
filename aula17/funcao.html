@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    //função sem retorno e sem parâmetro
+    function saudacao() {
+        console.log("Olá, mundo!");
+    }
+
+    saudacao()
+
+    //função com parâmetros
+    function saudacaoCompleta(nome, idade) {
+        console.log(`Seja bem-vindo, ${nome}! vejo que vc tem ${idade} anos de idade`);
+    }
+
+    saudacaoCompleta("João Luiz", 20);
+
+    function exibirNomes(listaNomes) {
+        for (let i = 0; i < listaNomes.length; i++) {
+            console.log(listaNomes[i]);
+        }
+    }
+
+    const nomes = ["Maria", "José", "Ana", "Carlos"];
+    exibirNomes(nomes);
+
+    function listarNomeTelefone(listaPessoas) {
+        for (let i = 0; i < listaPessoas.length; i++) {
+            console.log(`Nome: ${listaPessoas[i].nome}, Telefone: ${listaPessoas[i].telefone}`);
+        }
+    }
+
+    listarNomeTelefone([
+        { nome: "João Luiz", telefone: "123456789" },
+        { nome: "Maria Silva", telefone: "987654321" }
+    ]);
+
+    function somarNumeros(a, b) {
+        return a + b;
+    }
+
+    const resultado = somarNumeros(5, 10);
+    console.log(`O resultado da soma é: ${resultado}`);
+
+    function calcularBhaskarah(a, b, c) {
+        const delta = b * b - 4 * a * c;
+        if (delta < 0) {
+            return "Não existem raízes reais.";
+        } else if (delta === 0) {
+            const raiz = -b / (2 * a);
+            return `Existe uma raiz real: ${raiz}`;
+        } else {
+            const raiz1 = (-b + Math.sqrt(delta)) / (2 * a);
+            const raiz2 = (-b - Math.sqrt(delta)) / (2 * a);
+            return `Existem duas raízes reais: ${raiz1} e ${raiz2}`;
+        }
+    }
+
+    // funções com retorno
+
+    function somarNumeros(a, b) {
+        let soma = a + b;
+        return soma;
+    }
+
+    somarNumeros(5, 10);
+
+</script>
+
+</html>
