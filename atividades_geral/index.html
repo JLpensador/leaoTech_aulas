@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro Simples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Cadastro de Usuários</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input type="text" id="nome" class="form-control mb-2" placeholder="Nome">
+                <input type="number" id="idade" class="form-control mb-2" placeholder="Idade">
+                <input type="text" id="foto" class="form-control mb-2" placeholder="URL Foto">
+                <input type="text" id="cpf" class="form-control mb-3" placeholder="CPF" maxlength="14">
+
+                <button class="btn btn-primary me-2" onclick="cadastrar()">Cadastrar</button>
+                <button class="btn btn-info me-2" onclick="listar()">Listar</button>
+                <button class="btn btn-warning" onclick="editar()">Editar</button>
+            </div>
+
+            <div class="col-md-6" id="lista" style="display:none;">
+                <h4>Usuários:</h4>
+                <div id="cards"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Array inicial
+        let usuarios = [
+            { nome: "João", idade: 25, foto: "https://via.placeholder.com/150", cpf: "111.222.333-44" },
+            { nome: "Maria", idade: 30, foto: "https://via.placeholder.com/150", cpf: "555.666.777-88" },
+            { nome: "Pedro", idade: 28, foto: "https://via.placeholder.com/150", cpf: "999.000.111-22" }
+        ];
+
+        function cadastrar() {
+            let nome = document.getElementById('nome').value;
+            let idade = document.getElementById('idade').value;
+            let foto = document.getElementById('foto').value;
+            let cpf = document.getElementById('cpf').value;
+
+            usuarios.push({ nome, idade, foto, cpf });
+            alert('Cadastrado!');
+            limpar();
+        }
+
+        function listar() {
+            document.getElementById('lista').style.display = 'block';
+            let html = '';
+            usuarios.forEach((u, i) => {
+                html += `
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <img src="${u.foto}" width="50" class="me-2">
+                            <strong>${u.nome}</strong> - ${u.idade} anos<br>
+                            CPF: ${u.cpf}
+                            <button class="btn btn-sm btn-warning ms-2" onclick="editarIndex(${i})">Editar</button>
+                        </div>
+                    </div>
+                `;
+            });
+            document.getElementById('cards').innerHTML = html;
+        }
+
+        function editar() {
+            let cpf = document.getElementById('cpf').value;
+            let usuario = usuarios.find(u => u.cpf == cpf);
+
+            if (usuario) {
+                document.getElementById('nome').value = usuario.nome;
+                document.getElementById('idade').value = usuario.idade;
+                document.getElementById('foto').value = usuario.foto;
+                document.getElementById('cpf').value = usuario.cpf;
+                alert('Carregado para edição! Clique cadastrar para salvar.');
+            } else {
+                alert('Usuário não encontrado!');
+            }
+        }
+
+        function editarIndex(i) {
+            let usuario = usuarios[i];
+            document.getElementById('nome').value = usuario.nome;
+            document.getElementById('idade').value = usuario.idade;
+            document.getElementById('foto').value = usuario.foto;
+            document.getElementById('cpf').value = usuario.cpf;
+        }
+
+        function limpar() {
+            document.getElementById('nome').value = '';
+            document.getElementById('idade').value = '';
+            document.getElementById('foto').value = '';
+            document.getElementById('cpf').value = '';
+        }
+    </script>
+</body>
+
+</html>
